@@ -37,7 +37,7 @@ public class WebSocket {
     public void connectToWebSocket() {
         WebSocketContainer container = ContainerProvider.getWebSocketContainer();
         try {
-            URI uri = URI.create("ws://localhost:8000/");
+            URI uri = URI.create("ws://46.101.224.65:8000/");
             container.connectToServer(this, uri);
         } catch (DeploymentException | IOException ex) {
             LOGGER.log(Level.SEVERE, null, ex);
